@@ -31,9 +31,9 @@ Met een Control Flow beschrijf je de logica / structuur van je code. De Control 
 
 ## Enhancement
 
-Volgens de *Hierarchy of User Needs* moet je ervoor zorgen dat jouw interactie eerst *functional* en *reliable* is, voordat je het *usable* en *pleasurable* kan maken.
+<!-- Volgens de *Hierarchy of User Needs* moet je ervoor zorgen dat jouw interactie eerst *functional* en *reliable* is, voordat je het *usable* en *pleasurable* kan maken.
 
-![Hierarchy of User Needs](aarron-walter-user-needs.png) 
+![Hierarchy of User Needs](aarron-walter-user-needs.png)  -->
 
 ‼️ Dit betekent dat je jouw interactie eerst met een HTML formulier, POST en Server-side betrouwbaar moet bouwen, zodat je website het altijd doet. Hiervoor heb je de _Empty state_ en _Ideal state_ nodig in je Liquid code. Heb je dat nog niet, zorg dan eerst dat je dat werkend hebt, voordat je verder gaat met client-side enhancements. Gebruik hiervoor de [UI states workshop](https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality/blob/main/docs/ui-states.md) uit de eerste week van deze sprint.
 
@@ -76,7 +76,7 @@ Voeg de *Loading state* en *Success state* toe toe aan je Wireflow. Ontwerp hoe 
 <!--Gebruik hiervoor [de states van de UI-Stack](https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality/blob/main/docs/ui-states.md): Empty state, Loading state en Success state.--> Voeg deze nieuwe states toe aan je User Story issue.
 
 
-## Server-side vs. Client-side (om 10:30 uur)
+## Server-side vs. Client-side
 
 In Semester 2 leer je over zowel de server (NodeJS/Express) als de client (de browser). Deze “praten” met elkaar via HTTP en URLs. Een client kan bij een server data ophalen via een `GET` method, en data versturen via een `POST` method.
 

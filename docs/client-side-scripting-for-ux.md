@@ -2,7 +2,17 @@
 
 ## Client-Side scripting for UX
 
-Over het toepassen van View Transitions als de UI state in je website moet veranderen.
+Over het toepassen van client-side scripting om de User Experience te verbeteren.
+
+<!--
+Over UX, waarom zou je client side scripten? Alles doet het toch al server-side? Voro de UX!! 
+Zoek maar states die je niet met server-side technieken kan tonen? Loading !
+
+Over Posten als client-side enhancement
+- Javascript; 3 stappenplkan voor POST en GET van content 
+- Viewtransitions 
+
+-->
 
 ### UX
 
@@ -14,7 +24,9 @@ Verschillende principes zijn belangrijk voor een goede UX, zoals Toegankelijkhei
 
 Deze workshop gaan we met behulp van de _View Transition API_ feedback geven aan de gebruiker als het posten en laden van data is gelukt. Maar eerst gaan we onderzoeken wat _View Transitions_ zijn en wat je er zoal mee kan.
 
-## View Transition API (09:30)
+Daarna ga je leren hoe je met client-side JavaScript data kan posten, om de gebruiker goede feedback te geven.
+
+## View Transition API
 
 Met de _View Transition API_ kan je tussen verschillende _views_, oftewel states, animeren. Voorheen was hier veel JavaScript en CSS voor nodig, maar sinds een paar jaar kunnen moderne browsers dit voor jou doen.
 Het is een mooie techniek om bijvoorbeeld de resultaten van een filter en sorteer actie te tonen, of de success state van het posten van een bericht te animeren. Of om een overgang tussen twee pagina's te animeren. Een website kan hierdoor sneller aanvoelen (_Perceived Performance_).
@@ -39,7 +51,7 @@ Niet elke browser ondersteunt deze nieuwe standaard, maar dit is een perfect voo
 - [Using the View Transition API @ MDN](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API/Using)
 
 
-## Multi-Page transitions (10:00)
+## Multi-Page transitions
 
 Met de View Transition API kun je vrij gemakkelijk tussen twee paginabezoeken animeren. Bijvoorbeeld tussen een overzichtspagina en een detailpagina. Dat worden *cross-document view transitions* of *multi-page transitions* genoemd (voor _Multi-Page Apps, MPAs_). Omdat we server-side rendering met dynamische routes gebruiken dit semester, is dit een fijne toevoeging voor de UX.
 
@@ -64,7 +76,7 @@ Als je verder niks doet, krijg je een cross-fade tussen de `root` snapshots van 
 - [Getting started with View Transitions on multi-page apps](https://daverupert.com/2023/05/getting-started-view-transitions/)
 -->
 
-## Single-Page transitions (11:00)
+## Single-Page transitions
 
 Je kunt View Transitions ook inzetten om verschillende states op dezelfde pagina (_Single Page Apps, SPAs_) te animeren. Dit is een mooie techniek voor het extra _enhancen_ van bijvoorbeeld de success state van een POST functionaliteit, als je die met een client-side fetch hebt uitgebreid.
 

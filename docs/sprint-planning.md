@@ -23,7 +23,9 @@ Plan ook welke UI-components van de deeltaak Progressive Enhancement je deze spr
 Zet je issues in je nieuwe repo aan en voeg de issues uit de vorige sprint waarmee je verder wil toe aan je nieuwe repo (klik op 'transfer issue').
 
 #### Interactive functionality uit sprint 9
-Hoe ver ben je gekomen met de User Generated Content met een POST uit Sprint 9? Is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest op verschillende browsers? Als je dat nog niet hebt en je hebt hier nog geen issues voor maak die dan aan, bijvoorbeeld: "UI-stack states ontwerpen, bouwen en testen", "browser test uitvoeren".  Hier kan je deze sprint mooi aan doorwerken. 
+Hoe ver ben je gekomen met de User Generated Content met een POST uit Sprint 9? Is het al gelukt om verschillende UI-Stack states te ontwerpen en bouwen? Is de interactie volgens het principe van Progressive Enhancement gebouwd en heb je dit getest op verschillende browsers? 
+
+Als je dat nog niet hebt en je hebt hier nog geen issues voor maak die dan aan, bijvoorbeeld: "UI-stack states POST interactie", "Browser test uitvoeren". Hier kan je deze sprint mooi aan doorwerken. 
 
 Als je dit allemaal al is gelukt, maak dan een issue aan voor een user test om jouw interactie te testen met een gebruiker. Je kan in [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) teruglezen hoe je een user test kan voorbereiden en afnemen.
 
