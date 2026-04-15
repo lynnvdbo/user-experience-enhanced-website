@@ -381,6 +381,8 @@ main.artikel {
             gap: 0.5em;
         }
 
+        textarea {
+            height: 55px; /* hoogte van het textarea */
         button {
             padding: .5rem;
             background-color: transparent;
