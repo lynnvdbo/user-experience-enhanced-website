@@ -383,6 +383,9 @@ main.artikel {
 
         textarea {
             height: 55px; /* hoogte van het textarea */
+            max-width: 100%; /* zorgt ervoor dat je het textarea niet uit het vak kan trekken */
+        }
+
         button {
             padding: .5rem;
             background-color: transparent;
@@ -733,6 +736,7 @@ footer {
     p { 
         margin-block: 1em;
     }
+
 
     .comment-name {
         font-weight: 600;
