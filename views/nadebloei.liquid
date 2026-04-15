@@ -1,0 +1,49 @@
+{% render 'partials/head.liquid' %}
+
+ <main class="collectie-nadebloei">
+
+    <div class="terug-knop">
+        <a href="/collectie"><img src="/assets/pijltje-terug.svg" width="20" alt="pijltje terug">Terug</a>
+    </div>
+
+    <h1>Na de bloei</h1>
+    <p>14/14</p> 
+
+    {% comment %} in de bloei {% endcomment %}
+     <div>
+        <article>
+            <h2>Teunisbloem</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+
+        <article>
+            <h2>Duizendblad</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+
+        <article>
+            <h2>Dawrin Zuurbes</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+
+        <article>
+            <h2>Teunisbloem</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+
+        <article>
+            <h2>Duizendblad</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+
+        <article>
+            <h2>Dawrin Zuurbes</h2>
+            <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        </article>
+     </div>
+
+ </main>
+
+{% render 'partials/navbar.liquid', activeIcon: activeIcon %}
+
+{% render 'partials/foot.liquid' %}

@@ -1,0 +1,46 @@
+{% render 'partials/head.liquid' %}
+
+ <main class="home">
+
+    <h1>Home</h1>
+    <h2>Welkom bezoeker</h2>
+
+ 
+    {% comment %} BLOEMENVELD COLLECTIE {% endcomment %}
+    <section>
+        <img src="/assets/collectie.svg" width="20"  alt="bloemicoon">
+        <h3>Bloemenveld collectie</h3>
+    </section>
+
+    <p class="niks-gespaard-veldverkenner">Je hebt nog niks gespaard. Start de <span class="veldverkenner">Veldverkenner</span> om meer te weten te komen over wat er groeit en je collectie aan te vullen</p>
+
+
+    {% comment %} VELD NIEWS {% endcomment %}
+    <section>
+        <img src="/assets/nieuws.svg" width="20" alt="kranticoon">
+        <h3>Veld nieuws</h3>    
+    </section>
+
+
+    {% comment %} NIEUWS BERICHTEN {% endcomment %}
+
+    <div class="home-slide-nieuws">
+        {% for news in news %}
+            <a href="/nieuws/{{ news.slug }}">
+            <article class="nieuws-berichten">
+                <div class="details">
+                    <p class="bloemendveld">Bloemendveld</p>
+                    <p>4u geleden</p>
+                </div>
+                    <h4 class="titel">{{ news.title }}</h4>
+                    <img src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}">
+                </article>
+                </a>
+        {% endfor %} 
+     </div>
+
+ </main>
+
+{% render 'partials/navbar.liquid', activeIcon: activeIcon %}
+
+{% render 'partials/foot.liquid' %}

@@ -1,0 +1,76 @@
+{% render 'partials/head.liquid' %}
+
+ <main class="artikel">
+
+  {% for news in news %}
+    <div class="terug-knop">
+        <a href="/nieuws"><img src="/assets/pijltje-terug.svg" width="20" alt="pijltje terug">Terug</a>
+    </div>
+
+    <h1>Veld nieuws</h1>
+
+    <article>
+        <img src="https://fdnd-agency.directus.app/assets/{{ news.image }}" alt="{{ news.title }}" width="342" height="300"> 
+        <p>Geplaatst op: {{ news.date | date: "%d-%m-%Y"}}</p> 
+        <h2>{{ news.title }}</h2>
+        <p>{{ news.body }}</p>  
+    </article>
+
+{% comment %} laat een berichtje achter {% endcomment %}
+    <article id="reactie">
+      <h3>Laat hier een leuk bericht achter!</h3>
+        <form action="/nieuws/{{ news.slug }}" method="POST">
+          <label class="name">
+          Naam:
+          <input type="text" name="name" required>
+        </label>
+          <label class="bericht">
+            Bericht:
+            <textarea name="comment" required maxlength="100" style="height: 30px;"></textarea>
+          </label>
+
+          <input type="hidden" name="id" value="{{ news.id }}">
+
+          <label>
+            <input type="submit" value="Verstuur" class="verstuur-knop">
+          </label>
+        </form> 
+    </article>
+
+  {% comment %} alle ontvangen berichtjes {% endcomment %}
+  <div class="ontvangen-berichten" id="comment-lijst">
+    {{ comments.size }} berichten  {% comment %} dit laat zien hoeveel comments er zijn {% endcomment %}
+    {% for comment in comments %}
+      <p id="{{ comment.id }}">
+          <span class="comment-name">
+            {{ comment.name | default: 'onbekend' | truncate: 20 }} {% comment %} truncate: 20 zorgt ervoor dat de laatste 3 letters van de 20 ... worden {% endcomment %}
+          </span>: 
+          <span class="comment-text">
+            {{ comment.comment }}
+          </span>
+          <br>
+          <span class="comment-date">
+            {{ comment.date_created | date: '%d-%m-%Y %H:%M' }} {% comment %} zorgt dat de meest recente berichtje boveaan staat {% endcomment %}
+          </span>
+          </p>
+
+          {% comment %} verwijder knop {% endcomment %}
+          <form method="POST" action="/nieuws/{{ news.id }}/{{ news.slug }}/verwijder">
+            <input type="hidden" name="comment_id" value="{{ comment.id }}">
+            <button type="submit">Verwijder</button>
+        </form>
+      
+    {% else %}
+      <p>Er zijn nog geen berichten voor dit artikel.</p> {% comment %} empty state {% endcomment %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+
+   
+
+ </main>
+
+{% render 'partials/navbar.liquid', activeIcon: activeIcon %}
+
+{% render 'partials/foot.liquid' %}
