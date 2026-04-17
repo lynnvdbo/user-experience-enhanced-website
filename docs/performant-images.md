@@ -103,6 +103,11 @@ We hebben nu voornamelijk gekeken naar dezelfde afbeelding serveren op verschill
 
 🛠️ Er zijn nog een aantal optimalisaties die je kunt toepassen om images nog meer performant te maken. Ga op zoek welke `attributen` (zijn er meerdere) je hiervoor kunt gebruiken en schrijf ze op het bord. Maak een issue en beschrijf daar waar je deze attributen wilt gaan toepassen.
 
+<!--
+[`loading="lazy"`](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading)
+[`fetchpriority="high"`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/fetchpriority)
+-->
+
 ### Bronnen
 
 - [Do we use adaptive media loading and client hints?- Frontend Performance Checklist #21](https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/#21)
