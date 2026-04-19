@@ -35,11 +35,11 @@
                     <h4 class="titel">{{ news.title }}</h4>
                     <picture>
                         <!-- browser gebruikt de .avif als je dit type kent -->
-                        <source type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=avif">
+                        <source loading="lazy" type="image/avif" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=avif">
                         <!-- browser gebruikt de .webp als je dit type kent -->
-                        <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=webp">
+                        <source loading="lazy" type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=webp">
                         <!-- en als je beide niet kent of geen idee hebt wat <source> betekent, doe dan gewoon dit -->
-                        <img src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}">
+                        <img loading="lazy" src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}">
                     </picture>
                 </article>
                 </a>
