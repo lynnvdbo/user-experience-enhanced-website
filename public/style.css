@@ -268,17 +268,19 @@ main.veldverkenner {
         margin: 1em 0em 1em 0em;
     }
 
-    img {
-        border-radius: var(--border-radius);
-        height: 120px;
-        object-fit: cover;
+    picture {
         grid-row: 1 / 3; /* zorgt dat de afbeelding over 2 rijen is */
-        width: 90%;
+
+        img {
+            border-radius: var(--border-radius);
+            height: 120px;
+            object-fit: cover;
+            width: 90%;
+        }
 
         &:hover {
             /* transform: none; */
-            opacity: 0.9;
-            
+            opacity: 0.9; 
         }
 
         /* wanneer de gebruiker vermindering beweging heeft aan staan krijg je bij de hover geen transform scale maar een opacity */
