@@ -1,0 +1,31 @@
+{% render 'partials/head.liquid' %}
+
+ <main class="collectie">
+
+    <div class="terug-knop">
+        <a href="/"><img src="/assets/pijltje-terug.svg" width="20" alt="pijltje terug">Terug</a>
+    </div>
+
+    <h1>Collectie</h1>
+
+    {% comment %} in de bloei {% endcomment %}
+    <article>
+        <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        <h2>In de bloei</h2> 
+        <p>Bekijk alle digitale kaarten die je hebt gespaard in het bloemenveld en lees de bijbehorende informatie over de bloem of plant terug.</p>
+        <a href="/indebloei">Bekijk alle kaarten</a>
+    </article>
+
+    {% comment %} na de bloei {% endcomment %}
+    <article>
+        <img class="afbeelding" src="/assets/duizendblad.png" alt="{{ artikel.title }}" width="342" height="200">
+        <h2>Na de bloei</h2> 
+        <p>Bekijk alle digitale kaarten die je hebt gespaard in het bloemenveld en lees de bijbehorende informatie over de bloem of plant terug.</p>
+        <a href="/nadebloei">Bekijk alle kaarten</a>
+    </article>
+
+ </main>
+
+{% render 'partials/navbar.liquid', activeIcon: activeIcon %}
+
+{% render 'partials/foot.liquid' %}
