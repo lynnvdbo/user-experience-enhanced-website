@@ -45,3 +45,9 @@
             {{ comment.date_created | date: '%d-%m-%Y %H:%M' }} {% comment %} zorgt dat de meest recente berichtje boveaan staat {% endcomment %}
           </span>
           </p>
+
+          {% comment %} verwijder knop {% endcomment %}
+          <form method="POST" action="/nieuws/{{ news.id }}/{{ news.slug }}/verwijder">
+            <input type="hidden" name="comment_id" value="{{ comment.id }}">
+            <button type="submit">Verwijder</button>
+        </form>
