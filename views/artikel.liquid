@@ -1,0 +1,30 @@
+{% render 'partials/head.liquid' %}
+
+ <main class="artikel">
+
+  {% for news in news %}
+    <div class="terug-knop">
+        <a href="/nieuws"><img src="/assets/pijltje-terug.svg" width="20" alt="pijltje terug">Terug</a>
+    </div>
+
+    <h1>Veld nieuws</h1>
+{% comment %} laat een berichtje achter {% endcomment %}
+    <article id="reactie">
+      <h3>Laat hier een leuk bericht achter!</h3>
+        <form action="/nieuws/{{ news.slug }}" method="POST">
+          <label class="name">
+          Naam:
+          <input type="text" name="name" required>
+        </label>
+          <label class="bericht">
+            Bericht:
+            <textarea name="comment" required maxlength="100"></textarea>
+          </label>
+
+          <input type="hidden" name="id" value="{{ news.id }}">
+
+          <label>
+            <input type="submit" value="Verstuur" class="verstuur-knop">
+          </label>
+        </form> 
+    </article>
