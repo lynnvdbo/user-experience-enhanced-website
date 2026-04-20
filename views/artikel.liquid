@@ -28,3 +28,20 @@
           </label>
         </form> 
     </article>
+
+  {% comment %} alle ontvangen berichtjes {% endcomment %}
+  <div class="ontvangen-berichten" id="comment-lijst">
+    {{ comments.size }} berichten  {% comment %} dit laat zien hoeveel comments er zijn {% endcomment %}
+    {% for comment in comments %}
+      <p id="{{ comment.id }}">
+          <span class="comment-name">
+            {{ comment.name | default: 'onbekend' | truncate: 20 }} {% comment %} truncate: 20 zorgt ervoor dat de laatste 3 letters van de 20 ... worden {% endcomment %}
+          </span>: 
+          <span class="comment-text">
+            {{ comment.comment }}
+          </span>
+          <br>
+          <span class="comment-date">
+            {{ comment.date_created | date: '%d-%m-%Y %H:%M' }} {% comment %} zorgt dat de meest recente berichtje boveaan staat {% endcomment %}
+          </span>
+          </p>
