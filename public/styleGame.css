@@ -16,13 +16,13 @@ h1, h2, form {
     margin-top: 1rem;
 }
 h2 {
-    /* margin-top: 2em; */
+    margin-top: 2em;
 }
 /* GRID */
 body{
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid; */
+  /* grid-gap: 2rem; */
+  /* grid-template-columns: repeat(2, 1fr); */
 }
 header{
   grid-column: span 2;
@@ -32,14 +32,25 @@ header{
 /* FORM STYLING */
 form {
     /* background: pink; */
-    max-width: 40rem;
-    border: 1px solid black;
+    max-width: 30rem;
+    /* border: 1px solid black; */
     padding: 1em;
+    margin-top: 0;
     input, textarea, button {
         font: normal 18px/150% Helvetica, sans-serif;
     }
     input:focus {
         /* background: gold; */
+    }
+    fieldset{
+      max-width: 15em;
+      margin: 1em 0;
+      display: inline-block;
+    }
+    fieldset legend{
+      background-color: black;
+      color: #efefef;
+      padding: 0 0.8em;
     }
     label {
         padding: 1em;
@@ -53,14 +64,17 @@ form {
             /* background: pink; */
         }
     }
+    input{
+        width: 4em;
+    }
     button {
         /* justify-content: flex-end; */
         width: 10em;
-        height: 2em;
+        /* height: 2em; */
         transition: all 0.3s ease-out;
 
         position: relative;
-        /* padding: 8px 16px; */
+        padding: 0.2em;
         background-color: #009579;
         border: none;
         outline: none;
@@ -81,19 +95,21 @@ form {
     background-color: gold;
     padding: 1em;
 }
-.loading button {
+    
+.loading {
     background-color: gold;
     color: black;
+    padding: 0.8em;
 }
   
   button {
-    position: relative;
+    /* position: relative; */
     /* display:flex; */
     /* justify-content: center; */
   }
   button span {
     /* display: inline-block; */
-    position: relative;
+    /* position: relative; */
     /* margin: 0 auto; */
     /* width: fit-content; */
     /* width: 200px; */
@@ -101,11 +117,11 @@ form {
   }
 
 /* BERICHTEN */
-div#berichten p{
+div#score p{
   border-bottom: 1px black solid;
 }
 /* View transition */
-div#berichten{
+div#score{
   max-width: 40rem;
   view-transition-name: messages;
 }

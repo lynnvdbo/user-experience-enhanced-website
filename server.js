@@ -156,9 +156,69 @@ app.get('/message', async function (request, response) {
 
 
 //SCORE
+app.get('/game', async function (request, response) {
+    // Fetch de data die je nodig hebt
+    const scoreResponse = await fetch('https://fdnd.directus.app/items/score?sort=-date_created')
+    const scoreResponseJSON = await scoreResponse.json()
+    //console.log(scoreResponseJSON)
+
+    // Render de bijhorende view en geef hier data mee
+    response.render('game.liquid', {
+        scores: scoreResponseJSON.data
+    })
+})
+//SCORE POST
+app.post('/score', async function (request, response) {
+    console.log("POST")
+    const postResponse = await fetch('https://fdnd.directus.app/items/score', {
+        method: 'POST',
+        body: JSON.stringify({
+        //   for: `Team Rocket`,
+        score_team_1: request.body.score_team_1,
+        score_team_2: request.body.score_team_2
+        }),
+        headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+        }
+    });
+
+    const postResponseJSON = await postResponse.json();        
+    // console.log("POST succes",postResponseJSON)
+
+    response.redirect(303, '/game')
+})
 
 
 
+/*
+//SCORE POST with Partial switch
+app.post('/score', async function (request, response) {
+    console.log("POST")
+    const postResponse = await fetch('https://fdnd.directus.app/items/score', {
+        method: 'POST',
+        body: JSON.stringify({
+        //   for: `Team Rocket`,
+        score_team_1: request.body.score_team_1,
+        score_team_2: request.body.score_team_2
+        }),
+        headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+        }
+    });
+
+    if(request.body.enhanced){
+        console.log("if clientside")
+        const postResponseJSON = await postResponse.json();
+        //Als we een clientside post hebben, dan renderen we alleen de partial met de data die net gepost is
+        response.render('partials/score.liquid', {score: postResponseJSON.data})
+
+    }else{
+        console.log("if serverside")
+        response.redirect(303, '/game')
+    }
+    
+})
+*/
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000; als deze applicatie ergens gehost wordt, waarschijnlijk poort 80
