@@ -13,7 +13,7 @@ planning maken, issues verplaatsen, sprint review verwerken, description schrijv
 Zet een ✅ als je het gedaan hebt, dan weten we hoe ver je bent.
 
 ## Repo klaarzetten
-Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal overnieuw beginnen, daar leer je van! (doe dit nu nog niet, dat komt later wel, na de planning)
+Fork en Clone deze leertaak. Dit keer is de _boilerplate_ leeg. Er staat niks in. Het idee is dat je alleen de code gaat overnemen die je nodig hebt. Misschien ga je wel helemaal opnieuw beginnen, daar leer je van! (doe dit nu nog niet, dat komt later wel, na de planning)
 
 ## Project board en planning maken
 Koppel het project board van de vorige sprint aan jouw repository van Sprint 10.
@@ -34,14 +34,14 @@ Als je dat nog niet hebt en je hebt hier nog geen issues voor, maak dan een nieu
 Als je dit allemaal al is gelukt, maak dan een sub-issue aan voor een user test om jouw interactie te testen met een gebruiker. Zet de bron voor de user test uitleg uit [sprint 5](https://github.com/fdnd-task/fix-the-flow-interactive-website/blob/main/docs/code-design-review-user-testing.md) er alvast bij.
 
 ### Sprint review verwerken
-Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de componenten waar je mee aan de slag wil deze sprint.
+Verwerk de feedback van de Sprint Review van sprint 9, maak issues van de onderdelen waar je mee aan de slag wil deze sprint.
 
 
 ## Description schrijven
 Schrijf voor elk issue dat je hebt aangemaakt of verplaatst een duidelijke _description_. Zo doen ze dat ook in het bedrijfsleven. 
 
 ### Analyse en knelpunten
-Schrijf voor een issue altijd een (korte) uitleg wat het issuse inhoudt en mogelijke knelpunten, en zo  nodig een user-story. 
+Schrijf voor een issue altijd een (korte) uitleg wat het issue inhoudt en mogelijke knelpunten, en zo  nodig een user-story. 
 
 Voeg een [takenlijst](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists) toe als er verschillende dingen moeten gebeuren. Zoals “Ontwerp UI-stack states”, “Ontwerp User preference media features”, “Breakdown URL’s, Routes, API data”, “Routes bouwen met Fetch data”, “Views aanmaken en bouwen met dynamsiche data”, “…”
 

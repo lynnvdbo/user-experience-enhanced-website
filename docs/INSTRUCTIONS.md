@@ -19,7 +19,7 @@ Deze leertaak wordt behandeld in Sprint 10. Er worden verschillende workshops aa
 
 - [Sprint Planning](sprint-planning.md)
 - [Performance](performance.md)
-- [Responsive Images](responsive-images.md)
+- [Performant Images](performant-images.md)
 - [Client-Side Scripting for UX](client-side-scripting-for-ux.md)
 - [Layout Shift & Perceived Performance](layout-shift-perceived-performance.md) <!-- [Perceived Performance](perceived-performance.md) -->
 - [Code/Design review](code-design-review.md)
