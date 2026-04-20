@@ -51,3 +51,18 @@
             <input type="hidden" name="comment_id" value="{{ comment.id }}">
             <button type="submit">Verwijder</button>
         </form>
+      
+    {% else %}
+      <p>Er zijn nog geen berichten voor dit artikel.</p> {% comment %} empty state {% endcomment %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+
+
+   
+
+ </main>
+
+{% render 'partials/navbar.liquid', activeIcon: activeIcon %}
+
+{% render 'partials/foot.liquid' %}
