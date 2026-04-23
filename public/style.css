@@ -408,6 +408,21 @@ main.artikel {
             max-width: 50em; 
             margin-inline: auto;     
         }
+
+        .verstuur-button {
+            width: 25%;
+        }
+
+        .verstuur-knop {
+            background-color: #555555;
+            color: var(--wit);
+            padding: 0.6em 1em 0.6em 1em;
+
+        &:hover {
+            background-color: transparent;
+            color: #555555;
+        }
+    }
     }
 
     h3 {
@@ -415,16 +430,7 @@ main.artikel {
         font-size: 1.2em;
     }
 
-    .verstuur-knop {
-        background-color: #555555;
-        color: var(--wit);
-        padding: 0.5em 1.1em 0.5em 1.1em;
-
-        &:hover {
-            background-color: transparent;
-            color: #555555;
-        }
-    }
+    
 
     .ontvangen-berichten {
         max-width: 600px;
