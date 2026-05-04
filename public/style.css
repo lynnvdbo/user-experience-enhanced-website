@@ -6,6 +6,14 @@ body {
 }
 
 
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        /* browser springt soepelere naar de geplaatste comment */  
+        scroll-behavior: smooth;
+    }
+}
+
+
 h1 {
     margin: 1em 0em 1em 0em;
     text-align: center;
@@ -810,3 +818,5 @@ http://localhost:8000/nieuws/de-zadenknoppen-van-de-teunisbloem-zijn-nu-goed-te-
         height: 100%;
     }
 }
+
+
