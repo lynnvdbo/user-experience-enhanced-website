@@ -399,7 +399,11 @@ main.artikel {
             &:hover {
                 background-color: #686868;
                 color: white;
+            }
 
+            /* zorgt ervoor dat een gebruiker niet meerdere comements kan plaatsen */       
+            &:disabled {
+                cursor: not-allowed;
             }
         } 
         }

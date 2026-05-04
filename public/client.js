@@ -17,6 +17,8 @@ commentForm.addEventListener("submit", async function(event) {
 // vervolgens om de loading state te tonen voegen we een classList toe
 formInput.classList.add("loading") 
 formInput.textContent = "Versturen..."
+// zorgt ervoor dat je niet nog een keer op versturen kan klikken
+formInput.disabled = true;
 
 // formdata voorbereiden
 let formData = new FormData(commentForm);
