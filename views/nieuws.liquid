@@ -38,7 +38,16 @@
                         <!-- browser gebruikt de .webp als je dit type kent -->
                         <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=webp">
                         <!-- en als je beide niet kent of geen idee hebt wat <source> betekent, doe dan gewoon dit -->
-                        <img loading="lazy" src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}">
+                        {% comment %} <img loading="lazy" src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}"> {% endcomment %}
+
+                        <img 
+                            {% if forloop.index <= 2 %}
+                                loading="eager"
+                                {% else %}
+                                loading="lazy"
+                                {% endif %}
+                                src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="{{news.title}}">
+                            
                     </picture>
                     <p class="label">Bloemendveld</p>
                     <h2 class="titel">{{ news.title }}</h2>
