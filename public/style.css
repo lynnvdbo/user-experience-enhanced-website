@@ -434,8 +434,15 @@ main.artikel {
             background-color: transparent;
             color: #555555;
         }
+
+        &.succes {     
+            background-color: green;
+            color: white;
+            border-color: green;
+        }
+        }
     }
-    }
+    
 
     h3 {
         margin-left: 0em;
@@ -818,5 +825,4 @@ http://localhost:8000/nieuws/de-zadenknoppen-van-de-teunisbloem-zijn-nu-goed-te-
         height: 100%;
     }
 }
-
 

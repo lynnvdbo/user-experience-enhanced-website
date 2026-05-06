@@ -73,8 +73,17 @@ if (nieuwsteComment) {
 console.log("Loading state weghalen")
 // loading state weghalen
 formInput.classList.remove("loading")
-formInput.textContent = "Verstuur"
+formInput.classList.add('succes')
+formInput.textContent = "✔ Verstuurd"
 
 // maakt het formulier leeg nadat het bericht is verstuurd
 commentForm.reset()
+
+// na 2,5 sec gaat hij weer terug naar de normale state dus 'verstuur'
+setTimeout(() => {
+
+formInput.classList.remove('succes')
+formInput.textContent = 'Verzenden'
+
+}, 2500)
 })
