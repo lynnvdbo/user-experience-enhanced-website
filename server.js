@@ -68,11 +68,13 @@ app.engine('liquid', engine.express())
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
 
+const baseURL = 'https://fdnd-agency.directus.app/items/frankendael_news'
+
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 app.get('/', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
-    const res = await fetch('https://fdnd-agency.directus.app/items/frankendael_news');
+    const res = await fetch(baseURL);
     const result = await res.json();
 
     response.render('index.liquid', {
@@ -93,7 +95,7 @@ app.get('/veldverkenner', async function (request, response) {
 // !!! route naar NIEUWS PAGINA !!! 
 app.get('/nieuws', async function (request, response) {
 
-    const res = await fetch('https://fdnd-agency.directus.app/items/frankendael_news');
+    const res = await fetch(baseURL);
     const result = await res.json();
 
     response.render('nieuws.liquid', {
@@ -109,7 +111,7 @@ app.get('/laatste-oudste', async function (request, response) {
   const params = {
       'sort': '-date',
   }
-  const personResponse = await fetch('https://fdnd-agency.directus.app/items/frankendael_news/?' + new URLSearchParams(params))
+  const personResponse = await fetch(baseURL + '?' + new URLSearchParams(params))
 
   const personResponseJSON = await personResponse.json()
   response.render('nieuws.liquid', {
@@ -124,7 +126,7 @@ app.get('/oudste-laatste', async function (request, response) {
   const params = {
       'sort': 'date',
   }
-  const personResponse = await fetch('https://fdnd-agency.directus.app/items/frankendael_news/?' + new URLSearchParams(params))
+  const personResponse = await fetch(baseURL + '?' + new URLSearchParams(params))
 
   const personResponseJSON = await personResponse.json()
   response.render('nieuws.liquid', {
