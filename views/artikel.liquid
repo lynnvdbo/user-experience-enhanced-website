@@ -16,7 +16,8 @@
             <!-- browser gebruikt de .webp als je dit type kent -->
             <source type="image/webp" srcset="https://fdnd-agency.directus.app/assets/{{news.image}}?format=webp">
             <!-- en als je beide niet kent of geen idee hebt wat <source> betekent, doe dan gewoon dit -->
-            <img src="https://fdnd-agency.directus.app/assets/{{ news.image }}" alt="{{ news.title }}" width="342" height="300"> 
+            <img src="https://fdnd-agency.directus.app/assets/{{ news.image }}" alt="{{ news.title }}" width="{{ news.width }}" height="{{ news.height }}"> 
+                                
         </picture>      
         <p>Geplaatst op: {{ news.date | date: "%d-%m-%Y"}}</p> 
         <h2>{{ news.title }}</h2>
