@@ -37,10 +37,7 @@ main.home {
         margin-left: 1em;
         display: flex;
         gap: 0.5em;
-
-        h3 {
-            margin-block: 1.5em; /*-block = top en bottom in een*/
-        }
+        margin-block: 1.7em; /*-block = top en bottom in een*/
     }
 
     /* Section met nieuws */
@@ -48,10 +45,7 @@ main.home {
         display: flex;
         gap: 0.5em;
         margin-left: 1em;
-
-        h3 {
-            margin-block: 1.5em;
-        }
+        margin-block: 1.7em;
     }
 }
 
