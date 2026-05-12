@@ -15,7 +15,6 @@ Check [hier](https://server-side-rendering-server-side-website-qfhx.onrender.com
 
   * [Beschrijving](#beschrijving)
   * [Huisstijl](#huisstijl)
-  * [Responsive](#responsive)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
   * [Bronnen](#bronnen)
@@ -29,9 +28,30 @@ Voor de opdrachtgever maken wij een website wat eigenlijk een webapp is. Het is 
 
 De afgelopen weken heb ik mij gefocust op de performance van de website en aan de loading en succes state van de commments bij een artikel aan de hand met client side javascript.
 
+## Huisstijl
+Van de opdrachtgever hebben wij een prototype gekregen van het design in een [figma bestand](https://www.figma.com/design/9UctVXSWnspKX72xtLvNQ5/Prototype-Bloemenveld?node-id=0-1&p=f&t=qHEk4ifRm1wbrbWr-0) Op basis van dat prototype design ben ik mijn website gaan maken. Ik heb dezelfde kleuren, afbeeldingen, fonts etc gebruikt en toegepast op de website.
+
 ## Loading state
 
+Ik heb bij de verzendknop voor de comments een loading state toegevoegd, zodat de gebruiker ziet wat er gebeurd en weet dat de comment wordt geplaatst.
+
+https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/public/client.js#L17-L19
+
 ## Succes state
+
+Naast de loading state heb ik ook een succes state toegevoegd om te laten weten dat de comment goed is verstuurd.
+
+https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/public/client.js#L72-L77
+
+## Disabled
+
+En daarbij heb ik ook toegepast dat je als gebruiker maar een comment kan achterlaten zodat er niet gespamt kan worden.
+
+https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/public/style.css#L411-L414
+
+https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/public/client.js#L20-L21
+
+https://github.com/user-attachments/assets/cd9aeaf4-1934-48b6-bd67-cf028d5e2e6b
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
@@ -65,7 +85,7 @@ Ik heb bij de afbeeldingen een width en height toegevoegd zodat de browser al we
 
 https://github.com/lynnvdbo/user-experience-enhanced-website/blob/0d126fe5bbd5b71aba143e2ed900f9bfcafa5925/views/index.liquid#L50-L51
 
-https://github.com/lynnvdbo/user-experience-enhanced-website/blob/be8a89ffd019cbdb3cbcc1fcd3bfab8efbe7b45f/views/partials/navbar.liquid#L3-L8
+https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/views/partials/navbar.liquid#L10-L11
 
 ## Installatie
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
