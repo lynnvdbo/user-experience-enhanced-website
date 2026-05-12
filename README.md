@@ -31,13 +31,13 @@ De afgelopen weken heb ik mij gefocust op de performance van de website en aan d
 ## Huisstijl
 Van de opdrachtgever hebben wij een prototype gekregen van het design in een [figma bestand](https://www.figma.com/design/9UctVXSWnspKX72xtLvNQ5/Prototype-Bloemenveld?node-id=0-1&p=f&t=qHEk4ifRm1wbrbWr-0) Op basis van dat prototype design ben ik mijn website gaan maken. Ik heb dezelfde kleuren, afbeeldingen, fonts etc gebruikt en toegepast op de website.
 
-## Loading state
+## [Loading state](https://github.com/lynnvdbo/user-experience-enhanced-website/issues/21)
 
 Ik heb bij de verzendknop voor de comments een loading state toegevoegd, zodat de gebruiker ziet wat er gebeurd en weet dat de comment wordt geplaatst.
 
 https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/public/client.js#L17-L19
 
-## Succes state
+## [Succes state](https://github.com/lynnvdbo/user-experience-enhanced-website/issues/21)
 
 Naast de loading state heb ik ook een succes state toegevoegd om te laten weten dat de comment goed is verstuurd.
 
@@ -57,7 +57,7 @@ https://github.com/user-attachments/assets/cd9aeaf4-1934-48b6-bd67-cf028d5e2e6b
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framwork of library gebruikt? -->
 De website is gebouwd met HTML, CSS en JS, NodeJS, Express, JSON en Liquid
 
-## Performance technieken die ik hebt toegepast
+## [Performance technieken](https://github.com/lynnvdbo/user-experience-enhanced-website/issues/22) die ik hebt toegepast
 
 - Responsive images
 - Lazy loading
@@ -86,6 +86,8 @@ Ik heb bij de afbeeldingen een width en height toegevoegd zodat de browser al we
 https://github.com/lynnvdbo/user-experience-enhanced-website/blob/0d126fe5bbd5b71aba143e2ed900f9bfcafa5925/views/index.liquid#L50-L51
 
 https://github.com/lynnvdbo/user-experience-enhanced-website/blob/26d443a07c4d9ec1c84b6502203525b128fbd72e/views/partials/navbar.liquid#L10-L11
+
+Daarnaast heb ik ook een [Performance Audit](https://github.com/lynnvdbo/user-experience-enhanced-website/issues/25) test gedaan op de website
 
 ## Installatie
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
